@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS -->
+</head>
+<body>
+    <div class="container">
+        <h2>Register</h2>
+        <form action="register_action.php" method="POST">
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm_password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="account-type">Account Type:</label>
+                <select id="account-type" name="account_type" required>
+                    <option value="customer">Customer</option>
+                    <option value="admin">Admin</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn">Register</button>
+            </div>
+        </form>
+        <p>Already have an account? <a href="login.html">Login here</a>.</p>
+    </div>
+
+    <!-- You can include a footer or additional scripts -->
+    <script src="script.js"></script> <!-- Link to your JS -->
+</body>
+</html>
